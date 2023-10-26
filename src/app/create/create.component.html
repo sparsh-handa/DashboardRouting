@@ -1,0 +1,40 @@
+<h1>Enter User Details</h1>
+<form class="row g-3" [formGroup]="userForm" (submit)="addUsersData()" (submit)="showMessage()">
+    <!-- <div class="col-md-6"> -->
+    <!-- <label for="inputEmail4" class="form-label">User Id</label>
+    <input type="text" class="form-control" id="id" formControlName = "id" placeholder="Enter Id">
+    </div> -->
+
+    <div class="col-md-3">
+        <label for="fname" class="form-label">FirstName</label>
+        <input type="text" class="form-control" id="fname" formControlName="firstName" placeholder="Enter FirstName">
+
+    </div>
+    <div class="col-3">
+        <label for="lname" class="form-label">Lastname</label>
+        <input type="text" class="form-control" id="lname" placeholder="" formControlName="lastName"
+            placeholder="Enter LastName">
+    </div>
+    <div class="col-6">
+        <label for="cont" class="form-label">contact</label>
+        <input type="text" class="form-control" id="cont" placeholder="" formControlName="contact"
+            placeholder="Enter Conttact details">
+    </div>
+    <div class="col-md-6">
+        <label for="gender" class="form-label">Gender</label>
+        <input type="text" class="form-control" id="gender" formControlName="gender" placeholder="Enter Gender">
+    </div>
+    <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" formControlName="emailAdderss" placeholder="Enter Email">
+    </div>
+    <div class="col-md-4">
+        <label for="age" class="form-label">age</label>
+        <input type="text" class="form-control" formControlName="age" placeholder="Enter age">
+        
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
